@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_price"
+            android:text="@string/app_name"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/beef"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/img_detail" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:text="-"
+                android:id="@+id/btn_tru"
+                android:backgroundTint="@color/red"
+                android:gravity="center" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_soluong"
+                android:text="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp" />
+
+        <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="+"
+                android:id="@+id/btn_cong"
+                android:backgroundTint="@color/red"
+                android:gravity="center" />
+
+    </LinearLayout>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_addtocart"
+            android:text="Add to cart"
+            android:background="@drawable/bo_nut_button_add_to_cart"
+            android:layout_marginTop="10dp" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_desc"
+            android:hint="desc"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
+                app:mbn_circleColor="#F44336"
+                android:id="@+id/bar"
+                android:backgroundTintMode="src_in"
+                app:mbn_backgroundBottomColor="@color/white"
+                app:mbn_countBackgroundColor="#ff6f00"
+                app:mbn_countTextColor="#4CAF50"
+                android:layout_alignParentBottom="true"
+                app:mbn_defaultIconColor="#F44336"
+                app:mbn_rippleColor="#FFEB3B"
+                app:mbn_selectedIconColor="@color/black"
+                app:mbn_shadowColor="#1f212121" />
+    </RelativeLayout>
+
+</LinearLayout>

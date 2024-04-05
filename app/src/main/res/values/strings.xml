@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BT_29_3_2024</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_support">Support</string>
+    <string name="menu_settings">Settings</string>
+</resources>
